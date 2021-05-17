@@ -2,20 +2,20 @@
 
 use Notion\PropertyBase;
 
-class Select extends PropertyBase
-{
-    public function value()
-    {
+class Select extends PropertyBase {
+    public function value() {
         return $this->config->select->name;
     }
 
-    public function set($value): void
-    {
+    public function set($value): void {
         $this->config->select->name = $value;
     }
 
-    public function getValue()
-    {
+    public function setColor($value = "default"): void {
+        $this->config->select->color = $value;
+    }
+
+    public function getValue() {
         return $this->config->select;
     }
 }
