@@ -28,7 +28,7 @@ class PropertyBase
     {
         $value = json_decode(json_encode($this->getValue()), true);
 
-        if (!$value) {
+        if (! $value) {
             return null;
         }
 

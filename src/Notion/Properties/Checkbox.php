@@ -6,7 +6,7 @@ class Checkbox extends PropertyBase
 {
     public function getValue()
     {
-        if (!is_bool($this->config->checkbox)) {
+        if (! is_bool($this->config->checkbox)) {
             return false;
         }
 

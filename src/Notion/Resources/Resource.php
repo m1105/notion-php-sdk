@@ -1,10 +1,10 @@
 <?php namespace Notion\Resources;
 
 use Notion\Notion;
-use Notion\Objects\Page;
-use Notion\Objects\Database;
-use Notion\Traits\Filterable;
 use Notion\Objects\Collection;
+use Notion\Objects\Database;
+use Notion\Objects\Page;
+use Notion\Traits\Filterable;
 
 class Resource
 {
@@ -61,7 +61,7 @@ class Resource
             ];
         }
 
-        if ($this->id && !str_contains($this->endpoint, $this->id)) {
+        if ($this->id && ! str_contains($this->endpoint, $this->id)) {
             $response = $client->{$this->method}($this->endpoint . '/' . $this->id, $options);
         } else {
             $response = $client->{$this->method}($this->endpoint, $options);

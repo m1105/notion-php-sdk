@@ -1,8 +1,8 @@
 <?php namespace Notion;
 
 use Notion\Http\Client;
-use Notion\Resources\Page;
 use Notion\Resources\Database;
+use Notion\Resources\Page;
 
 class Notion
 {

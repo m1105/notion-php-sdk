@@ -6,7 +6,7 @@ class Title extends PropertyBase
 {
     public function value()
     {
-        if (!is_array($this->config->title)) {
+        if (! is_array($this->config->title)) {
             return '';
         }
 
@@ -15,7 +15,7 @@ class Title extends PropertyBase
 
     public function set($value): void
     {
-        if (!is_array($this->config->title)) {
+        if (! is_array($this->config->title)) {
             $this->config->title = [];
 
             $this->config->title[] = (object) [

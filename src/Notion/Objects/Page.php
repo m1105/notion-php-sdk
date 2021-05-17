@@ -32,7 +32,7 @@ class Page extends ObjectBase
                             'type' => 'text',
                             'content' => $text,
                         ],
-                    ]
+                    ],
                 ],
             ],
         ];
@@ -50,7 +50,7 @@ class Page extends ObjectBase
         foreach ($this->properties as $property) {
             $value = $property->get();
 
-            if (!$value) {
+            if (! $value) {
                 continue;
             }
 
@@ -73,7 +73,7 @@ class Page extends ObjectBase
 
     public function __get($property)
     {
-        if (!isset($this->properties[$property])) {
+        if (! isset($this->properties[$property])) {
             return $this->$property;
         }
 
@@ -83,8 +83,9 @@ class Page extends ObjectBase
 
     public function __set($property, $value)
     {
-        if (!isset($this->properties[$property])) {
+        if (! isset($this->properties[$property])) {
             $this->$property = $value;
+
             return;
         }
 

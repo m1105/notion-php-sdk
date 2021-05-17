@@ -1,25 +1,24 @@
 <?php namespace Notion;
 
-use Notion\RichText;
 use Illuminate\Support\Str;
-use Notion\Properties\URL;
-use Notion\Properties\Date;
-use Notion\Properties\File;
-use Notion\Properties\Email;
-use Notion\Properties\Title;
-use Notion\Properties\Number;
-use Notion\Properties\People;
-use Notion\Properties\Rollup;
-use Notion\Properties\Select;
-use Notion\Properties\Formula;
-use Notion\Properties\Relation;
 use Notion\Properties\Checkbox;
 use Notion\Properties\CreatedBy;
 use Notion\Properties\CreatedTime;
-use Notion\Properties\MultiSelect;
-use Notion\Properties\PhoneNumber;
+use Notion\Properties\Date;
+use Notion\Properties\Email;
+use Notion\Properties\File;
+use Notion\Properties\Formula;
 use Notion\Properties\LastEditedBy;
 use Notion\Properties\LastEditedTime;
+use Notion\Properties\MultiSelect;
+use Notion\Properties\Number;
+use Notion\Properties\People;
+use Notion\Properties\PhoneNumber;
+use Notion\Properties\Relation;
+use Notion\Properties\Rollup;
+use Notion\Properties\Select;
+use Notion\Properties\Title;
+use Notion\Properties\URL;
 
 class ObjectBase
 {
@@ -51,8 +50,8 @@ class ObjectBase
 
     protected function setProperties($data): void
     {
-        $this->id               = $data->id;
-        $this->created_time     = $data->created_time;
+        $this->id = $data->id;
+        $this->created_time = $data->created_time;
         $this->last_edited_time = $data->last_edited_time;
 
         if (isset($data->archived)) {
