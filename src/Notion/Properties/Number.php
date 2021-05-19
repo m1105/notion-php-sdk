@@ -6,15 +6,11 @@ class Number extends PropertyBase
 {
     public function value()
     {
-
-
         return $this->config->number;
     }
 
     public function set($value): void
     {
-
-
         $this->config->number= $value;
     }
 
