@@ -11,7 +11,7 @@ class URL extends PropertyBase
 
     public function set($value): void
     {
-        $this->config->url= $value;
+        $this->config->url = $value;
     }
 
     public function getValue()

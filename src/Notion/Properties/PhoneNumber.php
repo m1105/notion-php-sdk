@@ -11,7 +11,7 @@ class PhoneNumber extends PropertyBase
 
     public function set($value): void
     {
-        $this->config->phone_number= $value;
+        $this->config->phone_number = $value;
     }
 
     public function getValue()

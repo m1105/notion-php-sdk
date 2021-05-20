@@ -20,7 +20,7 @@ class MultiSelect extends PropertyBase
 
             $this->config->multi_select[] = (object) [
                 'name' => $value['name'],
-                'color'=>$value['color']?$value['color']:null,
+                'color' => $value['color']?$value['color']:null,
             ];
 
             return;

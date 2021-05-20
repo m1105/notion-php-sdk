@@ -10,7 +10,7 @@ class Checkbox extends PropertyBase
     }
     public function set($value): void
     {
-        $this->config->checkbox= $value;
+        $this->config->checkbox = $value;
     }
     public function getValue()
     {

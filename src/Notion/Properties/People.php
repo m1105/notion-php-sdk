@@ -18,15 +18,15 @@ class People extends PropertyBase
         if (! is_array($this->config->people)) {
             $this->config->people = [];
             $this->config->people[] = (object) [
-                'object'=>$value['object'],
-                'id'=>$value['id'],
+                'object' => $value['object'],
+                'id' => $value['id'],
             ];
 
             return;
         }
 
-        $this->config->people[0]->object= $value['object'];
-        $this->config->people[0]->id= $value['id'];
+        $this->config->people[0]->object = $value['object'];
+        $this->config->people[0]->id = $value['id'];
     }
 
     public function getValue()
