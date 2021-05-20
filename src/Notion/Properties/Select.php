@@ -12,6 +12,7 @@ class Select extends PropertyBase {
             $this->config->select = [];
         else
             $this->config->select->name = $value;
+
     }
 
     public function setColor($value = "default"): void {
